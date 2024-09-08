@@ -14,10 +14,10 @@ using the above formula.
 
 int main(int argc, char **argv) {
 
-double = varphi_1
-double = varphi_2
-double = delta
-
+double = $\varphi_1$
+double = $\varphi_2$
+double =  $\Delta$
+int = $R$
 
 
 
