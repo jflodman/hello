@@ -22,11 +22,11 @@ using the above formula.
 
 int main(int argc, char **argv) {
 
+double = latitude1
+double = latitude2
+double = longitude1
+double = longitude2
 
-double = $\varphi_1$
-double = $\varphi_2$
-double =  $\Delta$
-double = $R$
 
 
 scanf("%lf", &$\varphi_1$)
