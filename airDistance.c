@@ -12,4 +12,25 @@ using the above formula.
 #include <limits.h>
 #include <float.h>
 
+int main(int argc, char **argv) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
