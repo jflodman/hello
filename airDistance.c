@@ -57,7 +57,7 @@ distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitud
 
 printf("Location Distance\n");
 printf("========================\n")
-printf("Origin:      (41.948300, -87.655600))
+printf("Origin:      (radiusLong, -87.655600))
 
 
 
