@@ -50,6 +50,7 @@ scanf("%lf", &longitude2);
 
 radiusLatitude1 = degreesToRadians(latitude1);
 radiusLatitude2 = degreesToRadians(latitude2);
+radiusLongitude1 = degreesToRadians(longitude2);
 deltaLongitude = degreesToRadians(longitude2 - longitude1);
 
 
