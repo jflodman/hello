@@ -20,13 +20,22 @@ using the above formula.
 #define PI 3.141592653589793
 #define EARTH_RADIUS 6371.0
 
+
+double degreesToRadians(double degrees) {
+return (degrees * PI) / 180.0;
+
+}
+
 int main(int argc, char **argv) {
 
 double = latitude1
 double = latitude2
 double = longitude1
 double = longitude2
-
+double = radiusLatitude1
+double = radiusLatitude2
+double = deltaLongitude
+double = distance
 
 
 scanf("%lf", &$\varphi_1$)
