@@ -53,7 +53,7 @@ radiusLatitude2 = degreesToRadians(latitude2)
 deltaLongitude = degreesToRadians(longitude2 - longitude1)
 
 
-distance = 
+distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitude1) * cos(radiusLatitude2) * cos(deltaLongitude)) * EARTH_RADIUS;
 
 
 
