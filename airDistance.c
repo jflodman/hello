@@ -21,7 +21,8 @@ double =  $\Delta$
 double = $R$
 
 
-
+scanf("%lf", &$\varphi_1$)
+scanf("%lf", &$\varphi_2$)
 
 
 
