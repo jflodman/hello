@@ -14,6 +14,9 @@ using the above formula.
 
 int main(int argc, char **argv) {
 
+double = varphi_1
+double = varphi_2
+double = delta
 
 
 
@@ -32,5 +35,6 @@ int main(int argc, char **argv) {
 
 
 
-    
+
+
 }
