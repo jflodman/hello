@@ -11,13 +11,14 @@ using the above formula.
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
+#include<math.h>
 
 int main(int argc, char **argv) {
 
 double = $\varphi_1$
 double = $\varphi_2$
 double =  $\Delta$
-int = $R$
+double = $R$
 
 
 
