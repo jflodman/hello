@@ -28,20 +28,20 @@ return (degrees * PI) / 180.0;
 
 int main(int argc, char **argv) {
 
-double = latitude1
-double = latitude2
-double = longitude1
-double = longitude2
-double = radiusLatitude1
-double = radiusLatitude2
-double = deltaLongitude
-double = distance
+double = latitude1;
+double = latitude2;
+double = longitude1;
+double = longitude2;
+double = radiusLatitude1;
+double = radiusLatitude2;
+double = deltaLongitude;
+double = distance;
 
 
 //Ask user for input
 
-printf("enter the latitude and
-longitude of two locations)
+printf("Please enter the latitude and longitude of two locations:\n");
+scanf("%lf", latitude1, longitude1);
 
 
 
