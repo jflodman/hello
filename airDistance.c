@@ -57,7 +57,7 @@ distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitud
 
 printf("Location Distance\n");
 printf("========================\n");
-printf("Origin:      (radiusLatitude1, radiusLongitude2)");
+printf("Origin:              (%.6f, %.6f)\n", latitude1, longitude1);
 printf("Destination: (radiusLatitude2, radiusLongitude2)");
 printf("Air distance is  kms)
 
