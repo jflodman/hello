@@ -2,6 +2,8 @@
  *         jflodman3@huskers.unl.edu
  * Date: 09/8/2024
  *
+ *$$d = \arccos{(\sin(\varphi_1) \sin(\varphi_2) + \cos(\varphi_1) \cos(\varphi_2) \cos(\Delta) )} \cdot R$$
+ *
  * Write a program that *interactively prompts* the user to enter the latitude and
 longitude of two locations and then computes the distance between them
 using the above formula.
