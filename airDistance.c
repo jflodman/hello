@@ -40,13 +40,17 @@ double distance;
 
 //Ask user for input
 
-printf("Please enter the latitude and longitude of your first location:\n");
+printf("Enter the latitude and longitude of the origin:\n");
 scanf("%lf", &latitude1);
 scanf("%lf", &longitude1);
 
-printf(")
+printf("Enter the latitude and longitude of the destination:\n");
+scanf("%lf", &latitude2);
+scanf("%lf", &longitude2);
 
-
+radiusLatitude1 = degreesToRadians(latitude1)
+radiusLatitude2 = degreesToRadians(latitude2)
+deltaLongitude 
 
 
 
