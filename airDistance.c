@@ -56,9 +56,10 @@ deltaLongitude = degreesToRadians(longitude2 - longitude1);
 distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitude1) * cos(radiusLatitude2) * cos(deltaLongitude)) * EARTH_RADIUS;
 
 printf("Location Distance\n");
-printf("========================\n")
-printf("Origin:      (radiusLong, -87.655600))
-
+printf("========================\n");
+printf("Origin:      (radiusLatitude1, radiusLongitude2)");
+printf("Destination: (radiusLatitude2, radiusLongitude2)");
+printf("Air distance is  kms)
 
 
 
