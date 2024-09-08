@@ -41,7 +41,7 @@ double = distance;
 //Ask user for input
 
 printf("Please enter the latitude and longitude of two locations:\n");
-scanf("%lf", latitude1, longitude1);
+scanf("%lf", &latitude1, &longitude1);
 
 
 
