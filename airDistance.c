@@ -48,12 +48,17 @@ printf("Enter the latitude and longitude of the destination:\n");
 scanf("%lf", &latitude2);
 scanf("%lf", &longitude2);
 
-radiusLatitude1 = degreesToRadians(latitude1)
-radiusLatitude2 = degreesToRadians(latitude2)
-deltaLongitude = degreesToRadians(longitude2 - longitude1)
+radiusLatitude1 = degreesToRadians(latitude1);
+radiusLatitude2 = degreesToRadians(latitude2);
+deltaLongitude = degreesToRadians(longitude2 - longitude1);
 
 
 distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitude1) * cos(radiusLatitude2) * cos(deltaLongitude)) * EARTH_RADIUS;
+
+printf("Location Distance\n");
+printf("========================\n")
+printf(")
+
 
 
 
