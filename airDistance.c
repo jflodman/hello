@@ -38,8 +38,10 @@ double = deltaLongitude
 double = distance
 
 
-scanf("%lf", &$\varphi_1$)
-scanf("%lf", &$\varphi_2$)
+//Ask user for input
+
+printf("enter the latitude and
+longitude of two locations)
 
 
 
