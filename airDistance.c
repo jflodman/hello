@@ -34,7 +34,7 @@ double longitude1;
 double longitude2;
 double radiusLatitude1;
 double radiusLatitude2;
-double deltaLongitude; //distance between longitude1/latitude and longitude2/latitude
+double deltaLongitude; //distance between longitude1 and longitude2
 double distance;
 
 
@@ -50,7 +50,11 @@ scanf("%lf", &longitude2);
 
 radiusLatitude1 = degreesToRadians(latitude1)
 radiusLatitude2 = degreesToRadians(latitude2)
-deltaLongitude =
+deltaLongitude = degreesToRadians(longitude2 - longitude1)
+
+
+distance = 
+
 
 
 
