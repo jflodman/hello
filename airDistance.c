@@ -15,6 +15,8 @@ using the above formula.
 
 #include <stdio.h>
 #include <math.h>  // for math functions sin, cos, and acos
+#include <stdlib.h>
+
 
 
 #define PI 3.141592653589793
