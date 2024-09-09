@@ -11,58 +11,46 @@ longitude of two locations and then computes the distance between them
 using the above formula.
  *
  */
-#include <stdlib.h>
+
+
 #include <stdio.h>
-#include <limits.h>
-#include <float.h>
-#include<math.h>
+#include <math.h>  // for math functions sin, cos, and acos
+
 
 #define PI 3.141592653589793
-#define EARTH_RADIUS 6371.0
+#define EARTH_RADIUS_KILOMETERS 6371.0
 
 
-double degreesToRadians(double degrees) {
-return (degrees * PI) / 180.0;
-
+double convertDegreesToRadians(double degrees) {
+    return (degrees * PI) / 180.0;  // formula to convert degrees to radians
 }
 
-int main(int argc, char **argv) {
+int main() {
 
-double latitude1;
-double latitude2;
-double longitude1;
-double longitude2;
-double radiusLatitude1;
-double radiusLatitude2;
-double deltaLongitude; //distance between longitude1 and longitude2
-double distance;
+    double originLatitudeDegrees, originLongitudeDegrees;
+    double destinationLatitudeDegrees, destinationLongitudeDegrees;
+    double originLatitudeRadians, destinationLatitudeRadians;
+    double differenceLongitudeRadians;
+    double airDistanceKilometers;
 
 
-//Ask user for input
-
-printf("Enter the latitude and longitude of the origin:\n");
-scanf("%lf", &latitude1);
-scanf("%lf", &longitude1);
-
-printf("Enter the latitude and longitude of the destination:\n");
-scanf("%lf", &latitude2);
-scanf("%lf", &longitude2);
-
-radiusLatitude1 = degreesToRadians(latitude1);
-radiusLatitude2 = degreesToRadians(latitude2);
-radiusLongitude1 = degreesToRadians(longitude1);
-radiusLongitude2 = degreesToRadians(longitude2);
-deltaLongitude = degreesToRadians(longitude2 - longitude1);
+    printf("Enter the latitude and longitude of the origin:\n");
+    scanf("%lf %lf", &originLatitudeDegrees, &originLongitudeDegrees);
+    printf("Enter the latitude and longitude of the destination:\n");
+    scanf("%lf %lf", &destinationLatitudeDegrees, &destinationLongitudeDegrees);
 
 
-distance = acos(sin(radiusLongitude1) * sin(radiusLatitude2) + cos(radiusLatitude1) * cos(radiusLatitude2) * cos(deltaLongitude)) * EARTH_RADIUS;
-
-printf("Location Distance\n");
-printf("========================\n");
-printf("Origin:              (%.6f, %.6f)\n", latitude1, longitude1);
-printf("Destination:         (%.6f, %.6f)\n", latitude2, longitude2);
-printf("Air distance is %.6f kms\n", distance);
+    originLatitudeRadians = convertDegreesToRadians(originLatitudeDegrees);
+    destinationLatitudeRadians = convertDegreesToRadians(destinationLatitudeDegrees);
+    differenceLongitudeRadians = convertDegreesToRadians(destinationLongitudeDegrees - originLongitudeDegrees);
+    airDistanceKilometers = acos(sin(originLatitudeRadians) * sin(destinationLatitudeRadians) + cos(originLatitudeRadians) * cos(destinationLatitudeRadians) * cos(differenceLongitudeRadians)) * EARTH_RADIUS_KILOMETERS;
 
 
+    printf("Location Distance\n");
+    printf("========================\n");
+    printf("Origin:      (%.6f, %.6f)\n", originLatitudeDegrees, originLongitudeDegrees);
+    printf("Destination: (%.6f, %.6f)\n", destinationLatitudeDegrees, destinationLongitudeDegrees);
+    printf("Air distance is %.6f kilometers\n", airDistanceKilometers);
 
+    return 0;
 }
